@@ -205,93 +205,90 @@ Graph merging requires Dedupe results or any other result file, which follows st
 ├── .gitmodules
 ├── LICENSE
 ├── README.md
-├── auc_all_new.png                                         -- roc auc image world
-├── auc_china_new.png                                       -- roc auc image china
-├── auc_germany_new.png                                     -- roc auc image germany
-├── auc_usa_new.png                                         -- roc auc image us
-├── server.py                                               -- demo server script
-├── server_config.py                                        -- demo server config
-├── static                                                  -- server static files
-├── supplier_matching.png                                   -- supplier matching graph
-├── train_ditto.py                                          -- ditto train script
-├── util.py                                                 -- ditto util
-├── learned_settings                                        -- ditto learned settings
-├── matcher.py                                              -- execute ditto
-├── requirements.txt                                        -- project requirements
-├── CompanyMatcher.pdf                                      -- demo user guide
-├── configs.json                                            -- ditto configs
-├── ditto.jpg                                               -- ditto architecture
-├── ditto_scripts                                           -- ditto execution scripts
-│   ├── blocking_execute_cn.sh                              -- ditto blocking execute cn          
-│   ├── blocking_execute_de.sh                              -- ditto blocking execute de
-│   ├── blocking_execute_us.sh                              -- ditto blocking execute us
-│   ├── blocking_training_cn.sh                             -- ditto blocking train cn
-│   ├── blocking_training_de.sh                             -- ditto blocking train de
-│   ├── blocking_training_us.sh                             -- ditto blocking train us
-│   ├── ditto_match_cn.sh                                   -- ditto execute cn
-│   ├── ditto_match_de.sh                                   -- ditto execute de
-│   ├── ditto_match_us.sh                                   -- ditto execute us
-│   ├── ditto_train_cn.sh                                   -- ditto train cn
-│   ├── ditto_train_de.sh                                   -- ditto train de
-│   ├── ditto_train_us.sh                                   -- ditto train us
-│   └── ditto_execute_all.sh                                -- ditto run all scripts
-├── blocking_ditto                                          -- blocking for ditto
+├── server.py                                 -- demo server script
+├── server_config.py                          -- demo server config
+├── static                                    -- server static files
+├── supplier_matching.png                     -- supplier matching graph
+├── train_ditto.py                            -- ditto train script
+├── util.py                                   -- ditto util
+├── learned_settings                          -- ditto learned settings
+├── matcher.py                                -- execute ditto
+├── requirements.txt                          -- project requirements
+├── CompanyMatcher.pdf                        -- demo user guide
+├── configs.json                              -- ditto configs
+├── ditto.jpg                                 -- ditto architecture
+├── ditto_scripts                             -- ditto execution scripts
+│   ├── blocking_execute_cn.sh                -- ditto blocking execute cn          
+│   ├── blocking_execute_de.sh                -- ditto blocking execute de
+│   ├── blocking_execute_us.sh                -- ditto blocking execute us
+│   ├── blocking_training_cn.sh               -- ditto blocking train cn
+│   ├── blocking_training_de.sh               -- ditto blocking train de
+│   ├── blocking_training_us.sh               -- ditto blocking train us
+│   ├── ditto_match_cn.sh                     -- ditto execute cn
+│   ├── ditto_match_de.sh                     -- ditto execute de
+│   ├── ditto_match_us.sh                     -- ditto execute us
+│   ├── ditto_train_cn.sh                     -- ditto train cn
+│   ├── ditto_train_de.sh                     -- ditto train de
+│   ├── ditto_train_us.sh                     -- ditto train us
+│   └── ditto_execute_all.sh                  -- ditto run all scripts
+├── blocking_ditto                            -- blocking for ditto
 │   ├── README.md
-│   ├── sentence-transformers                               -- submodule
-│   ├── blocker.py                                          -- execute ditto blocking
-│   ├── train_blocker.py                                    -- train ditto blocking
-│   └── input_block                                         -- train data
-│       └── separate_data.py                                -- separate data to train, test, and val
-├── data_preparation                                        -- data preparation
-│   ├── data_preprocessing.ipynb                            -- prepare data
-│   ├── data_prep_consts.py                                 -- data preparation constants
-│   ├── data_prep_util.py                                   -- data preparation utils
-│   ├── id_merging.ipynb                                    -- util for adding scm ids
-│   ├── geolocation                                         -- folder, contains geolocation data
-│   ├── data                                                -- contains data prep files 
-│   └── graphs_generation_code                              -- contains graph queries
-│       ├── coypu.txt                                       -- coypu queries
-│       └── scm.txt                                         -- scm queries
-├── dedupe                                                  -- contains dedupe execution code
-│   ├── config_dedupe_cn.json                               -- dedupe config cn
-│   ├── config_dedupe_de.json                               -- dedupe config de
-│   ├── config_dedupe_us.json                               -- dedupe config us
-│   ├── data_preprocessing_dedupe.ipynb                     -- prepare data for dedupe
-│   ├── execute_cn.sh                                       -- execute dedupe cn
-│   ├── execute_de.sh                                       -- execute dedupe de
-│   ├── execute_us.sh                                       -- execute dedupe us
-│   └── data                                                -- dedupe files
-├── ditto_light                                             -- ditto source code
-│   ├── augment.py                                          -- ditto augmenter class
-│   ├── dataset.py                                          -- ditto dataset class
-│   ├── ditto.py                                            -- ditto model class
-│   ├── exceptions.py                                       -- ditto exceptions
-│   ├── knowledge.py                                        -- ditto domain knowledge injector
-│   └── summarize.py                                        -- ditto summarizer class
-├── ditto_prep                                              -- ditto data preparation
-│   ├── data_preprocessing_ditto.ipynb                      -- prepare ditto data
-│   ├── data_prep_consts.py                                 -- ditto preparation consts
-│   ├── data_prep_ditto_util.py                             -- ditto preparation util
-│   ├── fuzzy_ditto.ipynb                                   -- transform fuzzy output for ditto
-│   └── data                                                -- ditto files
-├── results_ditto                                           -- ditto show results
-│   └── read_results.py                                     -- ditto result reader
-├── fuzzy_matcher                                           -- fuzzy matcher execution code
-│   └── fuzzy_matcher.ipynb                                 -- execute fuzzy matcher
-├── gpt                                                     -- gpt matcher code
-│   ├── evaluate.py                                         -- gpt match evaluation
-│   └── openai_matcher.py                                   -- gpt supplier matcher
-├── graphs_merging                                          -- graphs merging code
-│   ├── cypher_queries.txt                                  -- queries for scm graph integration
-│   ├── sparql_queries.txt                                  -- queries exporting coypu graph
-│   ├── merging.ipynb                                       -- create merged graphs
-│   └── graph_data                                          -- graph merging files
-├── output                                                  -- ditto output files
-│   └── queries                                             -- demo client default target folder
-└── plotting                                                -- plotting code
-    ├── auc_plotting.ipynb                                  -- plot roc auc curve
-    ├── plot_fuzzy.ipynb                                    -- plot fuzzy results
-    └── world_plots.ipynb                                   -- plot maps
+│   ├── sentence-transformers                 -- submodule
+│   ├── blocker.py                            -- execute ditto blocking
+│   ├── train_blocker.py                      -- train ditto blocking
+│   └── input_block                           -- train data
+│       └── separate_data.py                  -- separate data to train, test, and val
+├── data_preparation                          -- data preparation
+│   ├── data_preprocessing.ipynb              -- prepare data
+│   ├── data_prep_consts.py                   -- data preparation constants
+│   ├── data_prep_util.py                     -- data preparation utils
+│   ├── id_merging.ipynb                      -- util for adding scm ids
+│   ├── geolocation                           -- folder, contains geolocation data
+│   ├── data                                  -- contains data prep files 
+│   └── graphs_generation_code                -- contains graph queries
+│       ├── coypu.txt                         -- coypu queries
+│       └── scm.txt                           -- scm queries
+├── dedupe                                    -- contains dedupe execution code
+│   ├── config_dedupe_cn.json                 -- dedupe config cn
+│   ├── config_dedupe_de.json                 -- dedupe config de
+│   ├── config_dedupe_us.json                 -- dedupe config us
+│   ├── data_preprocessing_dedupe.ipynb       -- prepare data for dedupe
+│   ├── execute_cn.sh                         -- execute dedupe cn
+│   ├── execute_de.sh                         -- execute dedupe de
+│   ├── execute_us.sh                         -- execute dedupe us
+│   └── data                                  -- dedupe files
+├── ditto_light                               -- ditto source code
+│   ├── augment.py                            -- ditto augmenter class
+│   ├── dataset.py                            -- ditto dataset class
+│   ├── ditto.py                              -- ditto model class
+│   ├── exceptions.py                         -- ditto exceptions
+│   ├── knowledge.py                          -- ditto domain knowledge injector
+│   └── summarize.py                          -- ditto summarizer class
+├── ditto_prep                                -- ditto data preparation
+│   ├── data_preprocessing_ditto.ipynb        -- prepare ditto data
+│   ├── data_prep_consts.py                   -- ditto preparation consts
+│   ├── data_prep_ditto_util.py               -- ditto preparation util
+│   ├── fuzzy_ditto.ipynb                     -- transform fuzzy output for ditto
+│   └── data                                  -- ditto files
+├── results_ditto                             -- ditto show results
+│   └── read_results.py                       -- ditto result reader
+├── fuzzy_matcher                             -- fuzzy matcher execution code
+│   └── fuzzy_matcher.ipynb                   -- execute fuzzy matcher
+├── gpt                                       -- gpt matcher code
+│   ├── evaluate.py                           -- gpt match evaluation
+│   └── openai_matcher.py                     -- gpt supplier matcher
+├── graphs_merging                            -- graphs merging code
+│   ├── cypher_queries.txt                    -- queries for scm graph integration
+│   ├── sparql_queries.txt                    -- queries exporting coypu graph
+│   ├── merging.ipynb                         -- create merged graphs
+│   └── graph_data                            -- graph merging files
+├── output                                    -- ditto output files
+│   └── queries                               -- demo client default target folder
+└── plotting                                  -- plotting code
+├── auc_plotting.ipynb                        -- plot roc auc curve
+├── plot_fuzzy.ipynb                          -- plot fuzzy results
+├── world_plots.ipynb                         -- plot maps
+└── results                                   -- roc auc plotting output
 
                  
 ```
