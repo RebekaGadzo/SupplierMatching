@@ -285,10 +285,10 @@ Graph merging requires Dedupe results or any other result file, which follows st
 ├── output                                    -- ditto output files
 │   └── queries                               -- demo client default target folder
 └── plotting                                  -- plotting code
-├── auc_plotting.ipynb                        -- plot roc auc curve
-├── plot_fuzzy.ipynb                          -- plot fuzzy results
-├── world_plots.ipynb                         -- plot maps
-└── results                                   -- roc auc plotting output
+    ├── auc_plotting.ipynb                        -- plot roc auc curve
+    ├── plot_fuzzy.ipynb                          -- plot fuzzy results
+    ├── world_plots.ipynb                         -- plot maps
+    └── results                                   -- roc auc plotting output
 
                  
 ```
