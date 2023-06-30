@@ -6,7 +6,7 @@
 
 **1st Examiner:** Prof. Dr. Stefan Lessmann 
 
-**2nd Examiner:** Prof. Dr. Benjamin Fabin
+**2nd Examiner:** Prof. Dr. Benjamin Fabian
 
 ![results](./supplier_matching.jpg)
 
