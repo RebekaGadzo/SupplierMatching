@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "Supplier Matching"
+authors:
+  - name: Rebeka Gadzo
+title: "Supplier Matching"
+year: 2023
+month: 7
+version: "1.0.0"
+how-published: "https://github.com/RebekaGadzo/SupplierMatching"
