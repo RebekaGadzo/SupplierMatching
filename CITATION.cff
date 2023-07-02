@@ -5,6 +5,4 @@ authors:
 title: "Supplier Matching"
 version: 1.0.0
 date-released: 2023-07-03
-citations:
-  - repository-code: https://github.com/RebekaGadzo/SupplierMatching
-    how_published: "Published online"
+repository-code: https://github.com/RebekaGadzo/SupplierMatching
