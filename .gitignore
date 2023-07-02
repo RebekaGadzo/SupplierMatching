@@ -10,4 +10,3 @@ output_companies_old.jsonl
 log.txt
 input/
 output/
-*.ttl
