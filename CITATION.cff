@@ -1,7 +1,10 @@
 cff-version: 1.2.0
+type: software
+message: "Supplier Matching"
 authors:
-  - family-names: Gadzo
-    given-names: Rebeka
-title: "Knowledge Graphs Integration in the Context of Supply Chain Risk Management on a Siemens Use Case"
-version: 1.0.0
-date-released: 2023-06-30
+  - name: Rebeka Gadzo
+title: "Supplier Matching"
+date-released: 2023.07.01
+version: "1.0.0"
+code-repository: "https://github.com/RebekaGadzo/SupplierMatching"
+url: "https://github.com/RebekaGadzo/SupplierMatching"
