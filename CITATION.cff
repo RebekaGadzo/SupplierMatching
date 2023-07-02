@@ -1,8 +1,0 @@
-cff-version: 1.2.0
-authors:
-  - family-names: Gadzo
-    given-names: Rebeka
-title: "Supplier Matching"
-version: 1.0.0
-date-released: 2023-07-03
-url: "url{https://github.com/RebekaGadzo/SupplierMatching}"
