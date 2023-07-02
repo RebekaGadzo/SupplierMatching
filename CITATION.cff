@@ -4,8 +4,7 @@ message: "Supplier Matching"
 authors:
   - name: Rebeka Gadzo
 title: "Supplier Matching"
-year: 2023
-month: 7
+date-released: 2023.07.01
 version: "1.0.0"
 code-repository: "https://github.com/RebekaGadzo/SupplierMatching"
 url: "https://github.com/RebekaGadzo/SupplierMatching"
